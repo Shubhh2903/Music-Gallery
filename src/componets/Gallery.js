@@ -22,16 +22,16 @@ function Gallery() {
           </LikeCounter>
         </AlbumMark>
         <AlbumMark>
-          <AlbumbPhoto />
-          <AlbumbName>All The Right Moves</AlbumbName>
-          <SingerName>Marck Edvin</SingerName>
+          <AlbumbPhoto2 />
+          <AlbumbName>Will You Rescue Me</AlbumbName>
+          <SingerName>Bishup</SingerName>
           <LikeCounter>
           🤍64.8k
           </LikeCounter>
         </AlbumMark>
         <AlbumMark>
-          <AlbumbPhoto />
-          <AlbumbName>All The Right Moves</AlbumbName>
+          <AlbumbPhoto3 />
+          <AlbumbName>My Fantacy Land</AlbumbName>
           <SingerName>Marck Edvin</SingerName>
           <LikeCounter>
           🤍64.8k
@@ -50,6 +50,7 @@ const LikeCounter = styled.div`
   line-height:1.4;
   text-align:center;
   color:#fff;
+  padding-top:10px;
 `
 const SingerName = styled.div`
   font-family: Cabin-Regular;
@@ -76,6 +77,20 @@ const AlbumbPhoto = styled.div`
   height: 200px;
   width: 200px;
 `;
+const AlbumbPhoto2 = styled.div`
+background-image: url(${Music2});
+background-repeat: no-repeat;
+background-size: cover;
+height: 200px;
+width: 200px;
+`
+const AlbumbPhoto3 = styled.div`
+background-image: url(${Music3});
+background-repeat: no-repeat;
+background-size: cover;
+height: 200px;
+width: 200px;
+`
 const AlbumMark = styled.div`
   display: flex;
   margin: 25px 150px 0 150px;
@@ -107,4 +122,5 @@ const Wrapper = styled.div`
   display: flex;
   background-color: #d48586;
   flex-direction: column;
-`;
+  padding-bottom:50px;
+ `;
